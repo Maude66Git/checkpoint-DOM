@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint JS DOM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    
+
+<div class="Cart-Container" id="panier">
+
+    <div class="Header">
+        <h3 class="Heading">Mon Panier!</h3>
+        <h3 class="text-pu">Prix unitaire en €</h3>
+        
+        
+    </div>
+
+    <!--Ajout du premier produit-->
+    <div class="Cart-Item">
+        <button class="remove" type="button"><u>Supprimer</u></button>
+        <div class="image-box">
+            <img src="images/Bracelet.jpg" alt="Bracelet" height="120"; />
+        </div>
+        <div class="about">
+            <h1 class="title">Bracelet</h1>
+            <h3 class="subtitle">Pierre de Dragon </h3>
+            <img src="images/icone_stock2.jpg" alt="icone en stock" height="30"/>
+        </div>
+        <!--Le compteur du produit-->
+        <div class="counter">
+            <button class="btn-act-moins" type="button">-</button>
+            <input type="test" placeholder="Unit price" class="qty" value="1">
+            <!--<div class="count">1</div>-->
+            <button class="btn-act-plus" type="button">+</button>
+        </div>
+        <div class="price">4</div>
+        
+        
+        <!--Le prix du produit-->
+        <div class="prices">
+            <!--<div class="amount">4€</div>-->
+                <img src="images/coeur-vide2.jpg" id="heart-ic-size" onclick="changeImage()"/>
+        </div>
+    </div>  
+
+    <!--Ajout du deuxieme produit-->
+    <div class="Cart-Item">
+        <button class="remove" type="button"><u>Supprimer</u></button>
+        <div class="image-box">
+            <img src="images/Collier.jpg" height="120" />
+        </div>
+        <div class="about">
+            <h1 class="title">Collier</h1>
+            <h3 class="subtitle">Pierre de citrine</h3>
+            <img src="images/icone_stock2.jpg" height="30"/>
+        </div>
+        <!--Le compteur du produit-->
+        <div class="counter">
+            <button class="btn-act-moins" type="button">-</button>
+            <input type="test" placeholder="Unit price" class="qty" value="1">
+            <!--<div class="count">1</div>-->
+            <button class="btn-act-plus" type="button">+</button>
+        </div>
+        <div class="price">5</div>
+        
+        <!--Le prix du produit-->
+        <div class="prices">
+            <!--<div class="amount">4€</div>-->
+            <img src="images/coeur-vide2.jpg" id="heart-ic-sizes" onclick="changeImages()"/>
+            
+        </div>
+    </div>  
+    
+    <!--Création de la partie sous total produit et commander-->
+    <hr> 
+    <div class="checkout">
+        <div class="total">
+            <div>
+                <div class="Subtotal">Total</div>
+                <!--<div class="items">2 produits</div>-->
+            </div>
+            <div class="totalamount">4€</div>
+        </div>
+            <button class="button"><a target="_blank" href="https://i.imgflip.com/2rb19p.jpg">Commander</a></button>
+        
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
